@@ -1,17 +1,19 @@
 <script setup lang="ts">
-const features = [
-  { title: 'File-based routing', desc: 'Create pages in the pages/ directory.' },
-  { title: 'Layouts', desc: 'Wrap pages with shared UI in layouts/default.vue.' },
-  { title: 'Components', desc: 'Auto-imported from components/.' }
-]
+const { t } = useI18n()
+
+const features = computed(() => [
+  { title: t('home.features.routing.title'), desc: t('home.features.routing.desc') },
+  { title: t('home.features.layouts.title'), desc: t('home.features.layouts.desc') },
+  { title: t('home.features.components.title'), desc: t('home.features.components.desc') }
+])
 </script>
 
 <template>
   <section class="space-y-6">
     <div class="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
-      <h1 class="text-3xl font-bold tracking-tight">Welcome</h1>
+      <h1 class="text-3xl font-bold tracking-tight">{{ t('home.welcome') }}</h1>
       <p class="mt-3 text-gray-600">
-        This is the default layout + index page + a shared component.
+        {{ t('home.subtitle') }}
       </p>
 
       <div class="mt-6 flex flex-wrap gap-3">

@@ -1,0 +1,18 @@
+{
+  "app": {
+    "title": "dz-expat",
+    "tagline": "Nuxt + Tailwind + i18n"
+  },
+  "nav": {
+    "home": "Home"
+  },
+  "home": {
+    "welcome": "Welcome",
+    "subtitle": "This page is translated (en/fr/ar) and Arabic is RTL.",
+    "features": {
+      "routing": { "title": "File-based routing", "desc": "Create pages in the pages/ directory." },
+      "layouts": { "title": "Layouts", "desc": "Wrap pages with shared UI in layouts/default.vue." },
+      "components": { "title": "Components", "desc": "Auto-imported from components/." }
+    }
+  }
+}

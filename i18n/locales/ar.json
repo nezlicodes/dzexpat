@@ -1,0 +1,18 @@
+{
+  "app": {
+    "title": "dz-expat",
+    "tagline": "Nuxt + Tailwind + i18n"
+  },
+  "nav": {
+    "home": "الرئيسية"
+  },
+  "home": {
+    "welcome": "مرحبًا",
+    "subtitle": "هذه الصفحة مترجمة (en/fr/ar) واللغة العربية من اليمين إلى اليسار.",
+    "features": {
+      "routing": { "title": "توجيه بالاعتماد على الملفات", "desc": "أنشئ الصفحات داخل مجلد pages/." },
+      "layouts": { "title": "التخطيطات", "desc": "استخدم layouts/default.vue لمشاركة واجهة موحّدة." },
+      "components": { "title": "المكوّنات", "desc": "يتم استيرادها تلقائيًا من components/." }
+    }
+  }
+}

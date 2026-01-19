@@ -1,6 +1,22 @@
+<script setup lang="ts">
+const head = useLocaleHead({
+  addDirAttribute: true,
+  addSeoAttributes: true
+})
+
+// Ensure <html lang="..."> is always present
+const { locale } = useI18n()
+useHead({
+  htmlAttrs: {
+    lang: locale
+  }
+})
+useHead(head)
+</script>
+
 <template>
   <div class="min-h-screen bg-gray-50 text-gray-900">
-    <AppHeader title="dz-expat" />
+    <AppHeader :title="$t('app.title')" />
 
     <main class="mx-auto max-w-5xl px-6 py-10">
       <slot />
