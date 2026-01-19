@@ -1,18 +1,173 @@
 {
   "app": {
-    "title": "dz-expat",
-    "tagline": "Nuxt + Tailwind + i18n"
+    "title": "DZ EXPAT",
+    "tagline": "Your project, our commitment"
   },
   "nav": {
-    "home": "Home"
+    "home": "Home",
+    "about": "About",
+    "solutions": "Solutions", 
+    "contact": "Contact",
+    "quote": "Get Quote"
   },
-  "home": {
-    "welcome": "Welcome",
-    "subtitle": "This page is translated (en/fr/ar) and Arabic is RTL.",
-    "features": {
-      "routing": { "title": "File-based routing", "desc": "Create pages in the pages/ directory." },
-      "layouts": { "title": "Layouts", "desc": "Wrap pages with shared UI in layouts/default.vue." },
-      "components": { "title": "Components", "desc": "Auto-imported from components/." }
+  "hero": {
+    "subtitle": "Algeria in action!",
+    "title": "DZ EXPAT",
+    "description": "In a context of business globalization, expatriating your human capital under the best conditions is a strong growth challenge. Less time spent on human resources work means more time dedicated to your core business.",
+    "cta": "CONTACT"
+  },
+  "needs": {
+    "title": "Your needs",
+    "subtitle": "Good integration of your collaborators in their new environment ensures rapid and smooth onboarding.",
+    "items": [
+      "You run a SME or multinational, you are considering an expatriation project or are already established in Algeria.",
+      "You are looking for business opportunities, economic stability and security are essential criteria for you.",
+      "You have practical needs in housing, health, education.",
+      "You attach importance to quality of life, culture and leisure."
+    ]
+  },
+  "solutions": {
+    "title": "Our solutions",
+    "subtitle": "Properly organizing these processes guarantees employee involvement and stability in the company.",
+    "logistics": {
+      "title": "LOGISTICS",
+      "items": [
+        "Audit of company and collaborator needs",
+        "Airport reception and transport to temporary accommodation",
+        "Recognition trip, city and neighborhood discovery",
+        "Welcome booklet",
+        "Rental housing search and commissioning",
+        "Furnishing assistance",
+        "Phone assistance",
+        "Departure assistance"
+      ]
+    },
+    "administrative": {
+      "title": "ADMINISTRATIVE",
+      "items": [
+        "Work authorization and residence permit for expat and family",
+        "Residence permit renewal",
+        "Bank account opening",
+        "Insurance contract opening",
+        "Phone line opening"
+      ]
+    },
+    "family": {
+      "title": "FAMILY",
+      "items": [
+        "School aid: family needs audit",
+        "School presentation: system, cost, diploma",
+        "Accompaniment to selected schools",
+        "Children enrollment aid"
+      ]
+    },
+    "intercultural": {
+      "title": "INTERCULTURAL",
+      "items": [
+        "Training, coaching and networking",
+        "Organized trip proposals",
+        "Extra-curricular activities organization"
+      ]
     }
+  },
+  "dzDream": {
+    "title": "DZ EXPAT, the Algerian dream",
+    "stats": [
+      "Territory of 2.4 million km²",
+      "Largest country in Africa, the Arab world and the Mediterranean basin",
+      "Central geographic position in the north of the continent with more than 1600km on the Mediterranean",
+      "10th largest country in the world",
+      "44 million inhabitants",
+      "Median age 28-29 years",
+      "Highest GDP in the Maghreb, 4th GDP in Africa",
+      "Highest HDI in North Africa, 3rd HDI in Africa",
+      "1st producer and exporter of oil and natural gas in the Mediterranean"
+    ],
+    "growth": "In 2022, Algeria is among the most emerging economies in the world with a growth rate of 4.7%.",
+    "debt": "In 2023, Algeria is the least indebted Arab country."
+  },
+  "confort": {
+    "title": "Comfort for every company actor",
+    "organization": {
+      "title": "ORGANIZATIONAL COMFORT",
+      "subtitle": "Financial optimization",
+      "items": [
+        "no fixed costs",
+        "operational efficiency", 
+        "cost control",
+        "increased expatriation ROI"
+      ]
+    },
+    "life": {
+      "title": "LIFE COMFORT", 
+      "subtitle": "Collaborator integration",
+      "items": [
+        "on-site support",
+        "emotional security",
+        "rapid onboarding",
+        "reduced psychosocial risks"
+      ]
+    }
+  },
+  "roi": {
+    "title": "DZ EXPAT, return on investment",
+    "perfect": {
+      "title": "PERFECT UNDERSTANDING OF NEEDS",
+      "description": "You want to improve your personnel onboarding by preventing psychosocial risks related to expatriation.",
+      "details": "We secure the collaborator in all aspects of their extra-professional life to make them more serene and therefore operational in the best conditions."
+    },
+    "management": {
+      "title": "CLEAR MANAGEMENT AND PLANNING",
+      "description": "You want financial and operational optimization by accessing know-how without bearing the investment cost.",
+      "details": "We cover and synchronize all mobility processes to ensure continuity between your headquarters and your new location."
+    },
+    "centralization": {
+      "title": "PARTNER CENTRALIZATION",
+      "description": "You want to facilitate human resources action by entrusting your geomobility management to a single interlocutor.",
+      "details": "We offer a coordination service between the different selected partners essential to the mission accomplishment."
+    }
+  },
+  "testimonials": {
+    "title": "Some figures",
+    "subtitle": "Our performance in numbers",
+    "stats": {
+      "clients": "Satisfied clients",
+      "projects": "Completed projects", 
+      "experience": "Years of experience",
+      "partners": "Partners"
+    },
+    "companies": [
+      {
+        "name": "ALSTOM TRANSPORT ALGERIA",
+        "quote": "We are very satisfied with Mrs. Messaoudi's work who impressed us with her efficiency and organization!",
+        "author": "Amel TRABZI",
+        "position": "HUMAN RESOURCES DIRECTOR"
+      },
+      {
+        "name": "SAIPEM ALGERIA", 
+        "quote": "Dhahoua Messaoudi has the necessary skills to find the most suitable solutions to our HR problems and offers exceptional customer support. Congratulations and thank you!",
+        "author": "Paul Tarik BENDER",
+        "position": "HUMAN RESOURCES DIRECTOR"
+      },
+      {
+        "name": "TOTAL LUBRIFIANTS & BITUMES ALGERIA",
+        "quote": "A big thank you to Mrs. Messaoudi for her excellent and innovative relocation services. Good luck for the future!",
+        "author": "Bernard CARBO",
+        "position": "GENERAL DIRECTOR"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Would you like to start a project with us?",
+    "description": "DZ EXPAT is a consulting firm for companies that assists Human Resources Departments in professional geomobility management.",
+    "phone": "+213 (0) 799 936 950"
+  },
+  "footer": {
+    "description": "DZ EXPAT is a consulting firm for companies that assists Human Resources Departments in professional geomobility management.",
+    "quickLinks": "Quick links",
+    "followUs": "Follow us", 
+    "contact": "Contact",
+    "address": "World Trade Center, 13 rue Mohamed Semani 16035 Hydra, Alger",
+    "copyright": "Copyright © 2024 DZ EXPAT | Website developed by TAIBOUNI WEB SOLUTION"
   }
 }

@@ -1,18 +1,173 @@
 {
   "app": {
-    "title": "dz-expat",
-    "tagline": "Nuxt + Tailwind + i18n"
+    "title": "DZ EXPAT",
+    "tagline": "Votre projet, notre engagement"
   },
   "nav": {
-    "home": "Accueil"
+    "home": "Accueil",
+    "about": "À propos",
+    "solutions": "Solutions",
+    "contact": "Contact",
+    "quote": "Devis"
   },
-  "home": {
-    "welcome": "Bienvenue",
-    "subtitle": "Cette page est traduite (en/fr/ar) et l'arabe est en RTL.",
-    "features": {
-      "routing": { "title": "Routage basé sur les fichiers", "desc": "Créez des pages dans le dossier pages/." },
-      "layouts": { "title": "Mises en page", "desc": "Partagez l'UI via layouts/default.vue." },
-      "components": { "title": "Composants", "desc": "Auto-importés depuis components/." }
+  "hero": {
+    "subtitle": "L'Algérie en action !",
+    "title": "DZ EXPAT",
+    "description": "Dans un contexte de mondialisation des entreprises, expatrier votre capital humain dans les meilleures conditions est un fort enjeu de croissance. Moins de temps pris sur le travail des ressources humaines, c'est plus de temps consacré à votre cœur de métier.",
+    "cta": "CONTACT"
+  },
+  "needs": {
+    "title": "Vos besoins",
+    "subtitle": "Une bonne intégration de vos collaborateurs dans leur nouvel environnement assure leur prise de fonction rapide et sereine.",
+    "items": [
+      "Vous dirigez une PME ou une multinationale, vous envisagez un projet d'expatriation ou êtes déjà établi en Algérie.",
+      "Vous êtes à la recherche d'opportunités d'affaires, la stabilité économique et la sécurité sont des critères essentiels pour vous.",
+      "Vous avez des besoins pratiques en matière de logement, de santé, d'éducation.",
+      "Vous attachez de l'importance à la qualité de vie, la culture et les loisirs."
+    ]
+  },
+  "solutions": {
+    "title": "Nos solutions",
+    "subtitle": "Bien organiser ces processus, c'est garantir l'implication et la stabilité du salarié dans l'entreprise.",
+    "logistics": {
+      "title": "LOGISTIQUE",
+      "items": [
+        "Audit des besoins de l'entreprise et de son collaborateur",
+        "Accueil à l'aéroport et transport vers le logement temporaire",
+        "Voyage de reconnaissance, découverte de la ville et de ses quartiers",
+        "Livret d'accueil",
+        "Recherche du logement en location et mise en service",
+        "Assistance à l'ameublement",
+        "Assistance téléphonique",
+        "Assistance au départ"
+      ]
+    },
+    "administrative": {
+      "title": "ADMINISTRATIF",
+      "items": [
+        "Autorisation de travail et titre de séjour de l'expatrié et de sa famille",
+        "Renouvellement de titre de séjour",
+        "Ouverture d'un compte bancaire",
+        "Ouverture d'un contrat d'assurance",
+        "Ouverture d'une ligne téléphonique"
+      ]
+    },
+    "family": {
+      "title": "FAMILLE",
+      "items": [
+        "Aide à la scolarité : audit des besoins de la famille",
+        "Présentation des écoles : système, coût, diplôme",
+        "Accompagnement aux écoles sélectionnées",
+        "Aide à l'inscription des enfants"
+      ]
+    },
+    "intercultural": {
+      "title": "INTERCULTUREL",
+      "items": [
+        "Formation, coaching et mise en relation réseau",
+        "Proposition de voyages organisés",
+        "Organisation d'activités extra-scolaires"
+      ]
     }
+  },
+  "dzDream": {
+    "title": "DZ EXPAT, le rêve algérien",
+    "stats": [
+      "Territoire de 2,4 millions de km²",
+      "Plus grand pays d'Afrique, du monde arabe et du bassin méditerranéen",
+      "Position géographique centrale au nord du continent avec plus de 1600km sur la Méditerranée",
+      "10ème plus grand pays au monde",
+      "44 millions d'habitants",
+      "Âge médian 28-29 ans",
+      "PIB le plus élevé du Maghreb, 4ème PIB d'Afrique",
+      "IDH le plus élevé d'Afrique du Nord, 3ème IDH d'Afrique",
+      "1er producteur et exportateur de pétrole et de gaz naturel dans la Méditerranée"
+    ],
+    "growth": "En 2022, l'Algérie fait partie des économies les plus émergentes au monde avec un taux de croissance de 4,7 %.",
+    "debt": "En 2023, l'Algérie est le pays arabe le moins endetté."
+  },
+  "confort": {
+    "title": "Le confort pour chaque acteur de l'entreprise",
+    "organization": {
+      "title": "CONFORT D'ORGANISATION",
+      "subtitle": "l'optimisation financière",
+      "items": [
+        "aucune charge fixe",
+        "efficacité opérationnelle",
+        "maîtrise des coûts",
+        "augmentation du ROI de l'expatriation"
+      ]
+    },
+    "life": {
+      "title": "CONFORT DE VIE",
+      "subtitle": "l'intégration du collaborateur",
+      "items": [
+        "accompagnement sur le terrain",
+        "sécurité émotionnelle",
+        "prise de fonction rapide",
+        "réduction des risques psychosociaux"
+      ]
+    }
+  },
+  "roi": {
+    "title": "DZ EXPAT, le retour sur investissement",
+    "perfect": {
+      "title": "UNE PARFAITE COMPRÉHENSION DES BESOINS",
+      "description": "Vous désirez améliorer la prise en charge de votre personnel en prévenant les risques psychosociaux liés à l'expatriation.",
+      "details": "Nous sécurisons le collaborateur dans tous les aspects de sa vie extra-professionnelle pour le rendre plus serein donc opérationnel dans de meilleurs délais."
+    },
+    "management": {
+      "title": "UNE GESTION ET UNE PLANIFICATION CLAIRE",
+      "description": "Vous souhaitez une optimisation financière et opérationnelle en accédant à un savoir-faire sans en supporter le coût d'investissement.",
+      "details": "Nous couvrons et synchronisons tous les processus de la mobilité pour assurer la continuité entre votre siège et votre nouvelle implantation."
+    },
+    "centralization": {
+      "title": "UNE CENTRALISATION DES PARTENAIRES",
+      "description": "Vous voulez faciliter l'action des ressources humaines en confiant la gestion de votre géomobilité à un interlocuteur unique.",
+      "details": "Nous offrons un service de coordination entre les différents partenaires sélectionnés et indispensables à la réalisation de la mission."
+    }
+  },
+  "testimonials": {
+    "title": "Quelques chiffres",
+    "subtitle": "Notre performance en chiffres",
+    "stats": {
+      "clients": "Clients satisfaits",
+      "projects": "Projets complétés",
+      "experience": "Années d'expérience",
+      "partners": "Partenariats"
+    },
+    "companies": [
+      {
+        "name": "ALSTOM TRANSPORT ALGERIA",
+        "quote": "Nous sommes très satisfaits du travail de Mme Messaoudi qui nous a impressionnés par son efficacité et son organisation !",
+        "author": "Amel TRABZI",
+        "position": "DIRECTRICE DES RESSOURCES HUMAINES"
+      },
+      {
+        "name": "SAIPEM ALGERIA",
+        "quote": "Dhahoua Messaoudi possède les compétences nécessaires pour trouver les solutions les mieux adaptées à nos problèmes RH et offre un soutien exceptionnel aux clients. Félicitations et merci !",
+        "author": "Paul Tarik BENDER",
+        "position": "DIRECTEUR DES RESSOURCES HUMAINES"
+      },
+      {
+        "name": "TOTAL LUBRIFIANTS & BITUMES ALGERIA",
+        "quote": "Un grand merci à Mme Messaoudi pour ses services de relocation excellents et innovants. Bonne chance pour la suite !",
+        "author": "Bernard CARBO",
+        "position": "DIRECTEUR GÉNÉRAL"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Vous souhaitez démarrer un projet avec nous ?",
+    "description": "DZ EXPAT est un cabinet de Conseil aux entreprises qui assiste les Directions des Ressources Humaines dans la gestion de la géomobilité professionnelle.",
+    "phone": "+213 (0) 799 936 950"
+  },
+  "footer": {
+    "description": "DZ EXPAT est un cabinet de Conseil aux entreprises qui assiste les Directions des Ressources Humaines dans la gestion de la géomobilité professionnelle.",
+    "quickLinks": "Liens rapides",
+    "followUs": "Suivez-nous",
+    "contact": "Contact",
+    "address": "World Trade Center, 13 rue Mohamed Semani 16035 Hydra, Alger",
+    "copyright": "Copyright © 2024 DZ EXPAT | Site web développé par TAIBOUNI WEB SOLUTION"
   }
 }

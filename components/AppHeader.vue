@@ -1,47 +1,65 @@
 <script setup lang="ts">
-type NavItem = { label: string; href: string; external?: boolean }
-
-const props = defineProps<{
-  title?: string
-  nav?: NavItem[]
-}>()
-
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const localePath = useLocalePath()
 
-const nav = computed<NavItem[]>(() =>
-  props.nav ?? [
-    { label: t('nav.home'), href: '/' },
-    { label: 'Nuxt', href: 'https://nuxt.com', external: true },
-    { label: 'Tailwind', href: 'https://tailwindcss.com', external: true }
-  ]
-)
+const nav = computed(() => [
+  { label: t('nav.home'), href: '/' },
+  { label: t('nav.about'), href: '/about' },
+  { label: t('nav.solutions'), href: '/solutions' },
+  { label: t('nav.contact'), href: '/contact' }
+])
+
+const currentFlag = computed(() => {
+  switch (locale.value) {
+    case 'fr': return '🇫🇷'
+    case 'ar': return '🇩🇿'
+    default: return '🇬🇧'
+  }
+})
+
+const currentLanguage = computed(() => {
+  switch (locale.value) {
+    case 'fr': return 'FRANÇAIS'
+    case 'ar': return 'العربية'
+    default: return 'ENGLISH'
+  }
+})
 </script>
 
 <template>
-  <header class="border-b border-gray-200 bg-white">
-    <div class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-6 py-4">
-      <NuxtLink :to="localePath('/')" class="text-base font-semibold tracking-tight">
-        {{ props.title ?? t('app.title') }}
-      </NuxtLink>
+  <header class="bg-primary text-white">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between py-4">
+        <!-- Logo -->
+        <NuxtLink :to="localePath('/')" class="flex flex-col">
+          <div class="text-2xl font-heading font-bold tracking-tight">{{ t('app.title') }}</div>
+          <div class="text-xs opacity-90">{{ t('app.tagline') }}</div>
+        </NuxtLink>
 
-      <div class="flex items-center gap-3">
-        <nav class="hidden items-center gap-1 text-sm text-gray-600 sm:flex">
-          <component
-            :is="item.external ? 'a' : 'NuxtLink'"
-            v-for="item in nav"
-            :key="item.href"
-            :href="item.external ? item.href : undefined"
-            :to="item.external ? undefined : localePath(item.href)"
-            class="rounded-md px-2 py-1 hover:bg-gray-100 hover:text-gray-900"
-            :target="item.external ? '_blank' : undefined"
-            :rel="item.external ? 'noreferrer' : undefined"
-          >
-            {{ item.label }}
-          </component>
-        </nav>
+        <!-- Navigation -->
+        <div class="flex items-center gap-8">
+          <nav class="hidden md:flex items-center gap-6">
+            <NuxtLink
+              v-for="item in nav"
+              :key="item.href"
+              :to="localePath(item.href)"
+              class="text-sm hover:text-gray-300 transition-colors font-medium"
+            >
+              {{ item.label }}
+            </NuxtLink>
+          </nav>
 
-        <LocaleSwitcher />
+          <!-- Language Selector -->
+          <div class="flex items-center gap-2 text-sm">
+            <span>{{ currentFlag }}</span>
+            <LocaleSwitcher />
+          </div>
+
+          <!-- CTA Button -->
+          <button class="hidden sm:block bg-primary-700 hover:bg-primary-800 px-4 py-2 text-sm font-heading font-semibold tracking-wide transition-colors">
+            {{ t('nav.quote') }}
+          </button>
+        </div>
       </div>
     </div>
   </header>
