@@ -249,6 +249,131 @@
       "phone": "+213 (0) 799 936 950"
     }
   },
+  "solutions": {
+    "hero": {
+      "title": "Nos Solutions",
+      "subtitle": "Services d'expatriation complets",
+      "description": "Bien organiser ces processus, c'est garantir l'implication et la stabilité du salarié dans l'entreprise."
+    },
+    "services": {
+      "title": "Nos Quatre Domaines de Services",
+      "subtitle": "Support complet pour vos besoins d'expatriation"
+    },
+    "logistics": {
+      "title": "LOGISTIQUE",
+      "items": [
+        "Audit des besoins de l'entreprise et de son collaborateur",
+        "Accueil à l'aéroport et transport vers le logement temporaire",
+        "Voyage de reconnaissance, découverte de la ville et de ses quartiers",
+        "Livret d'accueil",
+        "Recherche du logement en location et mise en service",
+        "Assistance à l'ameublement",
+        "Assistance téléphonique",
+        "Assistance au départ"
+      ]
+    },
+    "administrative": {
+      "title": "ADMINISTRATIF",
+      "items": [
+        "Autorisation de travail et titre de séjour de l'expatrié et de sa famille",
+        "Renouvellement de titre de séjour",
+        "Ouverture d'un compte bancaire",
+        "Ouverture d'un contrat d'assurance",
+        "Ouverture d'une ligne téléphonique"
+      ]
+    },
+    "family": {
+      "title": "FAMILLE",
+      "items": [
+        "Aide à la scolarité : audit des besoins de la famille",
+        "Présentation des écoles : système, coût, diplôme",
+        "Accompagnement aux écoles sélectionnées",
+        "Aide à l'inscription des enfants"
+      ]
+    },
+    "intercultural": {
+      "title": "INTERCULTUREL",
+      "items": [
+        "Formation, coaching et mise en relation réseau",
+        "Proposition de voyages organisés",
+        "Organisation d'activités extra-scolaires"
+      ]
+    },
+    "comfort": {
+      "title": "Le confort pour chaque acteur de l'entreprise"
+    },
+    "comfortTypes": [
+      {
+        "title": "CONFORT D'ORGANISATION",
+        "subtitle": "l'optimisation financière",
+        "items": [
+          "aucune charge fixe",
+          "efficacité opérationnelle",
+          "maîtrise des coûts",
+          "augmentation du ROI de l'expatriation"
+        ]
+      },
+      {
+        "title": "CONFORT DE VIE",
+        "subtitle": "l'intégration du collaborateur",
+        "items": [
+          "accompagnement sur le terrain",
+          "sécurité émotionnelle",
+          "prise de fonction rapide",
+          "réduction des risques psychosociaux"
+        ]
+      },
+      {
+        "title": "CONFORT DE TRAVAIL",
+        "subtitle": "la gestion et la planification",
+        "items": [
+          "synchronisation des processus",
+          "suivi de chaque étape",
+          "maîtrise des délais",
+          "professionnalisation du métier"
+        ]
+      },
+      {
+        "title": "CONFORT DE GESTION",
+        "subtitle": "la centralisation des prestataires",
+        "items": [
+          "interlocuteur unique",
+          "coordination du réseau d'intervenants",
+          "contrôle de chaque étape",
+          "relai entre l'entreprise et la nouvelle implantation"
+        ]
+      }
+    ],
+    "testimonialsTitle": "Témoignages Clients",
+    "testimonials": [
+      {
+        "name": "ALSTOM TRANSPORT ALGERIA",
+        "quote": "Nous sommes très satisfaits du travail de Mme Messaoudi qui nous a impressionnés par son efficacité et son organisation !",
+        "author": "Amel TRABZI",
+        "position": "Directrice des Ressources Humaines",
+        "logo": "alstom"
+      },
+      {
+        "name": "SAIPEM ALGERIA",
+        "quote": "Dhahoua Messaoudi possède les compétences nécessaires pour trouver les solutions les mieux adaptées à nos problèmes RH et offre un soutien exceptionnel aux clients. Félicitations et merci !",
+        "author": "Paul Tarik BENDER",
+        "position": "Directeur des Ressources Humaines",
+        "logo": "saipem"
+      },
+      {
+        "name": "TOTAL LUBRIFIANTS & BITUMES ALGERIA",
+        "quote": "Un grand merci à Mme Messaoudi pour ses services de relocation excellents et innovants. Bonne chance pour la suite !",
+        "author": "Bernard CARBO",
+        "position": "Directeur Général",
+        "logo": "total"
+      }
+    ],
+    "cta": {
+      "title": "Vous souhaitez démarrer un projet avec nous ?",
+      "description": "DZ EXPAT est un cabinet de Conseil aux entreprises qui assiste les Directions des Ressources Humaines dans la gestion de la géomobilité professionnelle.",
+      "phone": "+213 (0) 799 936 950"
+    }
+  },
   "footer": {
     "description": "DZ EXPAT est un cabinet de Conseil aux entreprises qui assiste les Directions des Ressources Humaines dans la gestion de la géomobilité professionnelle.",
     "quickLinks": "Liens rapides",

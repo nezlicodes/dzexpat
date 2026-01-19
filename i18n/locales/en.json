@@ -249,6 +249,131 @@
       "phone": "+213 (0) 799 936 950"
     }
   },
+  "solutions": {
+    "hero": {
+      "title": "Our Solutions",
+      "subtitle": "Comprehensive expatriation services",
+      "description": "Properly organizing these processes guarantees employee involvement and stability in the company."
+    },
+    "services": {
+      "title": "Our Four Service Areas",
+      "subtitle": "Complete support for your expatriation needs"
+    },
+    "logistics": {
+      "title": "LOGISTICS",
+      "items": [
+        "Audit of company and collaborator needs",
+        "Airport reception and transport to temporary accommodation",
+        "Recognition trip, city and neighborhood discovery",
+        "Welcome booklet",
+        "Rental housing search and commissioning",
+        "Furnishing assistance",
+        "Phone assistance",
+        "Departure assistance"
+      ]
+    },
+    "administrative": {
+      "title": "ADMINISTRATIVE",
+      "items": [
+        "Work authorization and residence permit for expat and family",
+        "Residence permit renewal",
+        "Bank account opening",
+        "Insurance contract opening",
+        "Phone line opening"
+      ]
+    },
+    "family": {
+      "title": "FAMILY",
+      "items": [
+        "School aid: family needs audit",
+        "School presentation: system, cost, diploma",
+        "Accompaniment to selected schools",
+        "Children enrollment aid"
+      ]
+    },
+    "intercultural": {
+      "title": "INTERCULTURAL",
+      "items": [
+        "Training, coaching and networking",
+        "Organized trip proposals",
+        "Extra-curricular activities organization"
+      ]
+    },
+    "comfort": {
+      "title": "Comfort for every company actor"
+    },
+    "comfortTypes": [
+      {
+        "title": "ORGANIZATIONAL COMFORT",
+        "subtitle": "Financial optimization",
+        "items": [
+          "no fixed costs",
+          "operational efficiency",
+          "cost control",
+          "increased expatriation ROI"
+        ]
+      },
+      {
+        "title": "LIFE COMFORT",
+        "subtitle": "Collaborator integration",
+        "items": [
+          "on-site support",
+          "emotional security",
+          "rapid onboarding",
+          "reduced psychosocial risks"
+        ]
+      },
+      {
+        "title": "WORK COMFORT",
+        "subtitle": "Management and planning",
+        "items": [
+          "process synchronization",
+          "step-by-step follow-up",
+          "deadline control",
+          "professional trade expertise"
+        ]
+      },
+      {
+        "title": "MANAGEMENT COMFORT",
+        "subtitle": "Service provider centralization",
+        "items": [
+          "single point of contact",
+          "stakeholder network coordination",
+          "step-by-step control",
+          "company-new location liaison"
+        ]
+      }
+    ],
+    "testimonialsTitle": "Client Testimonials",
+    "testimonials": [
+      {
+        "name": "ALSTOM TRANSPORT ALGERIA",
+        "quote": "We are very satisfied with Mrs. Messaoudi's work who impressed us with her efficiency and organization!",
+        "author": "Amel TRABZI",
+        "position": "Human Resources Director",
+        "logo": "alstom"
+      },
+      {
+        "name": "SAIPEM ALGERIA",
+        "quote": "Dhahoua Messaoudi has the necessary skills to find the most suitable solutions to our HR problems and offers exceptional customer support. Congratulations and thank you!",
+        "author": "Paul Tarik BENDER",
+        "position": "Human Resources Director",
+        "logo": "saipem"
+      },
+      {
+        "name": "TOTAL LUBRIFIANTS & BITUMES ALGERIA",
+        "quote": "A big thank you to Mrs. Messaoudi for her excellent and innovative relocation services. Good luck for the future!",
+        "author": "Bernard CARBO",
+        "position": "General Director",
+        "logo": "total"
+      }
+    ],
+    "cta": {
+      "title": "Would you like to start a project with us?",
+      "description": "DZ EXPAT is a consulting firm for companies that assists Human Resources Departments in professional geomobility management.",
+      "phone": "+213 (0) 799 936 950"
+    }
+  },
   "footer": {
     "description": "DZ EXPAT is a consulting firm for companies that assists Human Resources Departments in professional geomobility management.",
     "quickLinks": "Quick links",
