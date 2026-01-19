@@ -162,6 +162,93 @@
     "description": "DZ EXPAT est un cabinet de Conseil aux entreprises qui assiste les Directions des Ressources Humaines dans la gestion de la géomobilité professionnelle.",
     "phone": "+213 (0) 799 936 950"
   },
+  "about": {
+    "hero": {
+      "title": "À propos",
+      "subtitle": "Bienvenue chez DZ EXPAT",
+      "description": "Nous prenons en charge les démarches administratives et logistiques nécessaires à la mutation et l'adaptation de vos collaborateurs à leur nouvel environnement."
+    },
+    "pillars": {
+      "understanding": {
+        "title": "UNE PARFAITE COMPRÉHENSION DES BESOINS",
+        "subtitle": "Vous désirez améliorer la prise en charge de votre personnel en prévenant les risques psychosociaux liés à l'expatriation.",
+        "description": "Nous sécurisons le collaborateur dans tous les aspects de sa vie extra-professionnelle pour le rendre plus serein donc opérationnel dans de meilleurs délais."
+      },
+      "management": {
+        "title": "UNE GESTION ET UNE PLANIFICATION CLAIRE",
+        "subtitle": "Vous souhaitez une optimisation financière et opérationnelle en accédant à un savoir-faire sans en supporter le coût d'investissement.",
+        "description": "Nous couvrons et synchronisons tous les processus de la mobilité pour assurer la continuité entre votre siège et votre nouvelle implantation."
+      },
+      "centralization": {
+        "title": "UNE CENTRALISATION DES PARTENAIRES",
+        "subtitle": "Vous voulez faciliter l'action des ressources humaines en confiant la gestion de votre géomobilité à un interlocuteur unique.",
+        "description": "Nous offrons un service de coordination entre les différents partenaires sélectionnés et indispensables à la réalisation de la mission."
+      }
+    },
+    "qualifications": {
+      "title": "Diplômes, certifications et formations",
+      "expertise": "Expertise Professionnelle",
+      "expertiseDesc": "Années d'expérience en mobilité internationale et conseil RH",
+      "items": [
+      "2005|DEUG en Psychologie - Université François Rabelais - Tours",
+      "2008|Licence en Philosophie - Université Paris 8 - Paris",
+      "2013|Formation CGP (Conseiller en Gestion de Patrimoine) - Allianz Sales Academy - Maisons-Alfort",
+      "2014|Carte professionnelle mention 'Transactions sur immeubles et fonds de commerce' - Préfecture de Police de Paris",
+      "2015|Certification ERQ1 (European Relocation Qualification) par European Academy of Relocation Professionals - Paris",
+      "2016|Formation 'Protection sociale et immigration' au Syndicat National des Professionnels de la Relocation et de la Mobilité - Paris",
+      "2019|Exposition au Salon international de l'Energie et des Hydrocarbures NAPEC (North Africa Petroleum Exhibition & Conference) - Oran",
+      "2024|Ambassadrice du plus grand réseau mondial d'expatriés 'InterNations' - Alger"
+      ]
+    },
+    "founder": {
+      "title": "Le mot de la fondatrice",
+      "quote": "Le rêve algérien est une histoire qui se vit, puis se partage. Marhaba bikom !",
+      "quoteAuthor": "- Dhahoua Messaoudi"
+    },
+    "founderStory": [
+      "Dhahoua Messaoudi s'installe en Algérie en 2014, après avoir grandi en France.",
+      "Son expérience dans la transaction immobilière à Paris lui permet de créer à Alger, en 2015, la société de relocalisation « Héritage Conseil ».",
+      "Au décès de son père en 2016, elle rapatrie sa mère porteuse de la maladie d'Alzheimer en Algérie. Elle, qui depuis toujours, rêve du retour à sa terre natale.",
+      "En 2020, elle crée l'agence d'aide à domicile « Yaatik el Kheir ». À travers des formations et des groupes de parole, elle soutient les familles qui souffrent de cette maladie.",
+      "En 2023, sa mère nous quitte, laissant derrière elle son héritage profondément enraciné, le rêve algérien. « Héritage Conseil » devient « DZ EXPAT ».",
+      "DZ EXPAT partage avec vous la beauté de l'Algérie, ses paysages envoûtants et son hospitalité qui marquent pour toujours le voyageur."
+    ],
+    "comfort": {
+      "title": "Le confort pour chaque acteur de l'entreprise",
+      "subtitle": "Notre performance en chiffres"
+    },
+    "comfortTypes": [
+      {
+        "title": "CONFORT D'ORGANISATION",
+        "description": "Optimisation financière sans charges fixes, efficacité opérationnelle, maîtrise des coûts et augmentation du ROI de l'expatriation."
+      },
+      {
+        "title": "CONFORT DE VIE",
+        "description": "Intégration du collaborateur par l'accompagnement sur le terrain, sécurité émotionnelle, prise de fonction rapide et réduction des risques psychosociaux."
+      },
+      {
+        "title": "CONFORT DE TRAVAIL",
+        "description": "Adaptation à l'environnement professionnel, support administratif et gestion de transition fluide."
+      },
+      {
+        "title": "CONFORT DE GESTION",
+        "description": "Processus rationalisés, communication claire et coordination complète des projets."
+      }
+    ],
+    "stats": {
+      "title": "Quelques chiffres",
+      "subtitle": "Notre performance en chiffres",
+      "clients": "Clients satisfaits",
+      "projects": "Projets complétés",
+      "experience": "Années d'expérience",
+      "partnerships": "Partenariats"
+    },
+    "cta": {
+      "title": "Vous souhaitez démarrer un projet avec nous ?",
+      "description": "DZ EXPAT est un cabinet de Conseil aux entreprises qui assiste les Directions des Ressources Humaines dans la gestion de la géomobilité professionnelle.",
+      "phone": "+213 (0) 799 936 950"
+    }
+  },
   "footer": {
     "description": "DZ EXPAT est un cabinet de Conseil aux entreprises qui assiste les Directions des Ressources Humaines dans la gestion de la géomobilité professionnelle.",
     "quickLinks": "Liens rapides",

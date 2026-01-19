@@ -1,7 +1,66 @@
 <script setup lang="ts">
-const { t } = useI18n()
+const { t, tm } = useI18n()
 
 const localePath = useLocalePath()
+
+// Access arrays from translations using tm() and convert to strings
+const needsItems = computed(() => {
+  const items = tm('needs.items') as any[]
+  return items.map(item => typeof item === 'string' ? item : item.body?.static || item.static || String(item))
+})
+
+const dzDreamStats = computed(() => {
+  const items = tm('dzDream.stats') as any[]
+  return items.map(item => typeof item === 'string' ? item : item.body?.static || item.static || String(item))
+})
+
+// Solutions arrays
+const logisticsItems = computed(() => {
+  const items = tm('solutions.logistics.items') as any[]
+  return items.map(item => typeof item === 'string' ? item : item.body?.static || item.static || String(item))
+})
+
+const administrativeItems = computed(() => {
+  const items = tm('solutions.administrative.items') as any[]
+  return items.map(item => typeof item === 'string' ? item : item.body?.static || item.static || String(item))
+})
+
+const familyItems = computed(() => {
+  const items = tm('solutions.family.items') as any[]
+  return items.map(item => typeof item === 'string' ? item : item.body?.static || item.static || String(item))
+})
+
+const interculturalItems = computed(() => {
+  const items = tm('solutions.intercultural.items') as any[]
+  return items.map(item => typeof item === 'string' ? item : item.body?.static || item.static || String(item))
+})
+
+// Comfort arrays
+const organizationItems = computed(() => {
+  const items = tm('confort.organization.items') as any[]
+  return items.map(item => typeof item === 'string' ? item : item.body?.static || item.static || String(item))
+})
+
+const lifeItems = computed(() => {
+  const items = tm('confort.life.items') as any[]
+  return items.map(item => typeof item === 'string' ? item : item.body?.static || item.static || String(item))
+})
+
+// Testimonials
+const testimonialCompanies = computed(() => {
+  const companies = tm('testimonials.companies') as any[]
+  return companies.map(company => {
+    if (typeof company === 'object' && company !== null) {
+      return {
+        name: typeof company.name === 'string' ? company.name : company.name?.body?.static || company.name?.static || String(company.name),
+        quote: typeof company.quote === 'string' ? company.quote : company.quote?.body?.static || company.quote?.static || String(company.quote),
+        author: typeof company.author === 'string' ? company.author : company.author?.body?.static || company.author?.static || String(company.author),
+        position: typeof company.position === 'string' ? company.position : company.position?.body?.static || company.position?.static || String(company.position)
+      }
+    }
+    return company
+  })
+})
 
 // Stats for testimonials section
 const stats = computed(() => [
@@ -48,7 +107,7 @@ const stats = computed(() => [
           </div>
           
           <div class="space-y-4">
-            <div v-for="(item, index) in t('needs.items')" :key="index" class="flex items-start">
+            <div v-for="(item, index) in needsItems" :key="index" class="flex items-start">
               <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-4 flex-shrink-0"></div>
               <p class="text-gray-700 leading-relaxed">{{ item }}</p>
             </div>
@@ -78,7 +137,7 @@ const stats = computed(() => [
             </div>
             <h3 class="text-xl font-heading font-bold text-primary mb-6">{{ t('solutions.logistics.title') }}</h3>
             <div class="space-y-3">
-              <div v-for="item in t('solutions.logistics.items')" :key="item" class="flex items-start">
+              <div v-for="item in logisticsItems" :key="item" class="flex items-start">
                 <span class="text-primary mr-3">-</span>
                 <span class="text-gray-700 text-sm">{{ item }}</span>
               </div>
@@ -94,7 +153,7 @@ const stats = computed(() => [
             </div>
             <h3 class="text-xl font-heading font-bold text-primary mb-6">{{ t('solutions.administrative.title') }}</h3>
             <div class="space-y-3">
-              <div v-for="item in t('solutions.administrative.items')" :key="item" class="flex items-start">
+              <div v-for="item in administrativeItems" :key="item" class="flex items-start">
                 <span class="text-primary mr-3">-</span>
                 <span class="text-gray-700 text-sm">{{ item }}</span>
               </div>
@@ -110,7 +169,7 @@ const stats = computed(() => [
             </div>
             <h3 class="text-xl font-heading font-bold text-primary mb-6">{{ t('solutions.family.title') }}</h3>
             <div class="space-y-3">
-              <div v-for="item in t('solutions.family.items')" :key="item" class="flex items-start">
+              <div v-for="item in familyItems" :key="item" class="flex items-start">
                 <span class="text-primary mr-3">-</span>
                 <span class="text-gray-700 text-sm">{{ item }}</span>
               </div>
@@ -126,7 +185,7 @@ const stats = computed(() => [
             </div>
             <h3 class="text-xl font-heading font-bold text-primary mb-6">{{ t('solutions.intercultural.title') }}</h3>
             <div class="space-y-3">
-              <div v-for="item in t('solutions.intercultural.items')" :key="item" class="flex items-start">
+              <div v-for="item in interculturalItems" :key="item" class="flex items-start">
                 <span class="text-primary mr-3">-</span>
                 <span class="text-gray-700 text-sm">{{ item }}</span>
               </div>
@@ -150,7 +209,7 @@ const stats = computed(() => [
             <h2 class="text-4xl font-heading font-bold text-primary mb-8">{{ t('dzDream.title') }}</h2>
             
             <div class="space-y-4 mb-8">
-              <div v-for="stat in t('dzDream.stats')" :key="stat" class="flex items-start">
+              <div v-for="stat in dzDreamStats" :key="stat" class="flex items-start">
                 <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-4 flex-shrink-0"></div>
                 <p class="text-gray-700">{{ stat }}</p>
               </div>
@@ -180,7 +239,7 @@ const stats = computed(() => [
             <p class="text-lg font-medium text-gray-700 mb-6">{{ t('confort.organization.subtitle') }}</p>
             
             <div class="space-y-3">
-              <div v-for="item in t('confort.organization.items')" :key="item" class="flex items-start">
+              <div v-for="item in organizationItems" :key="item" class="flex items-start">
                 <span class="text-primary mr-3">–</span>
                 <span class="text-gray-700">{{ item }}</span>
               </div>
@@ -194,7 +253,7 @@ const stats = computed(() => [
             <p class="text-lg font-medium text-gray-700 mb-6">{{ t('confort.life.subtitle') }}</p>
             
             <div class="space-y-3">
-              <div v-for="item in t('confort.life.items')" :key="item" class="flex items-start">
+              <div v-for="item in lifeItems" :key="item" class="flex items-start">
                 <span class="text-primary mr-3">–</span>
                 <span class="text-gray-700">{{ item }}</span>
               </div>
@@ -257,7 +316,7 @@ const stats = computed(() => [
 
         <!-- Company Testimonials -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div v-for="company in t('testimonials.companies')" :key="company.name" class="bg-white rounded-lg p-6 text-center">
+          <div v-for="company in testimonialCompanies" :key="company.name" class="bg-white rounded-lg p-6 text-center">
             <h4 class="text-lg font-heading font-bold text-primary mb-4">{{ company.name }}</h4>
             <p class="text-gray-700 mb-6 italic">"{{ company.quote }}"</p>
             

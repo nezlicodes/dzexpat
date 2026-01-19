@@ -162,6 +162,93 @@
     "description": "DZ EXPAT is a consulting firm for companies that assists Human Resources Departments in professional geomobility management.",
     "phone": "+213 (0) 799 936 950"
   },
+  "about": {
+    "hero": {
+      "title": "About Us",
+      "subtitle": "Welcome to DZ EXPAT",
+      "description": "We take care of the administrative and logistical procedures necessary for the relocation and adaptation of your collaborators to their new environment."
+    },
+    "pillars": {
+      "understanding": {
+        "title": "PERFECT UNDERSTANDING OF NEEDS",
+        "subtitle": "You want to improve your personnel onboarding by preventing psychosocial risks related to expatriation.",
+        "description": "We secure the collaborator in all aspects of their extra-professional life to make them more serene and therefore operational in better conditions."
+      },
+      "management": {
+        "title": "CLEAR MANAGEMENT AND PLANNING",
+        "subtitle": "You want financial and operational optimization by accessing know-how without bearing the investment cost.",
+        "description": "We cover and synchronize all mobility processes to ensure continuity between your headquarters and your new location."
+      },
+      "centralization": {
+        "title": "PARTNER CENTRALIZATION",
+        "subtitle": "You want to facilitate human resources action by entrusting your geomobility management to a single interlocutor.",
+        "description": "We offer a coordination service between the different selected partners essential to the mission accomplishment."
+      }
+    },
+    "qualifications": {
+      "title": "Diplomas, certifications and training",
+      "expertise": "Professional Expertise",
+      "expertiseDesc": "Years of experience in international mobility and HR consulting",
+      "items": [
+      "2005|DEUG in Psychology - François Rabelais University - Tours",
+      "2008|License in Philosophy - Paris 8 University - Paris", 
+      "2013|CGP Training (Wealth Management Advisor) - Allianz Sales Academy - Maisons-Alfort",
+      "2014|Professional card mention 'Real estate and commercial transactions' - Paris Police Prefecture",
+      "2015|ERQ1 Certification (European Relocation Qualification) by European Academy of Relocation Professionals - Paris",
+      "2016|'Social protection and immigration' training at National Union of Relocation and Mobility Professionals - Paris",
+      "2019|Exhibition at the International Energy and Hydrocarbons Salon NAPEC (North Africa Petroleum Exhibition & Conference) - Oran",
+      "2024|Ambassador of the largest global expat network 'InterNations' - Algiers"
+      ]
+    },
+    "founder": {
+      "title": "The founder's story",
+      "quote": "The Algerian dream is a story that is lived, then shared. Marhaba bikom!",
+      "quoteAuthor": "- Dhahoua Messaoudi"
+    },
+    "founderStory": [
+      "Dhahoua Messaoudi moved to Algeria in 2014, after growing up in France.",
+      "Her experience in real estate transactions in Paris allowed her to create in Algiers, in 2015, the relocation company \"Héritage Conseil\".",
+      "At her father's death in 2016, she repatriated her mother with Alzheimer's disease to Algeria. She, who has always dreamed of returning to her homeland.",
+      "In 2020, she created the home care agency \"Yaatik el Kheir\". Through training and support groups, she supports families suffering from this disease.",
+      "In 2023, her mother left us, leaving behind her deeply rooted heritage, the Algerian dream. \"Héritage Conseil\" becomes \"DZ EXPAT\".",
+      "DZ EXPAT shares with you the beauty of Algeria, its enchanting landscapes and its hospitality that forever mark the traveler."
+    ],
+    "comfort": {
+      "title": "Comfort for every company actor",
+      "subtitle": "Our performance in numbers"
+    },
+    "comfortTypes": [
+      {
+        "title": "ORGANIZATIONAL COMFORT",
+        "description": "Financial optimization with no fixed costs, operational efficiency, cost control, and increased expatriation ROI."
+      },
+      {
+        "title": "LIFE COMFORT",
+        "description": "Collaborator integration through on-site support, emotional security, rapid onboarding, and reduced psychosocial risks."
+      },
+      {
+        "title": "WORK COMFORT",
+        "description": "Professional environment adaptation, administrative support, and seamless transition management."
+      },
+      {
+        "title": "MANAGEMENT COMFORT",
+        "description": "Streamlined processes, clear communication, and comprehensive project coordination."
+      }
+    ],
+    "stats": {
+      "title": "Some figures",
+      "subtitle": "Our performance in numbers",
+      "clients": "Satisfied clients",
+      "projects": "Completed projects",
+      "experience": "Years of experience",
+      "partnerships": "Partnerships"
+    },
+    "cta": {
+      "title": "Would you like to start a project with us?",
+      "description": "DZ EXPAT is a consulting firm for companies that assists Human Resources Departments in professional geomobility management.",
+      "phone": "+213 (0) 799 936 950"
+    }
+  },
   "footer": {
     "description": "DZ EXPAT is a consulting firm for companies that assists Human Resources Departments in professional geomobility management.",
     "quickLinks": "Quick links",
