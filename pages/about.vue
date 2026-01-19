@@ -5,13 +5,37 @@ const { t, tm } = useI18n()
 const qualifications = computed(() => {
   const items = tm('about.qualifications.items')
   if (!Array.isArray(items)) return []
-  return items.map(item => typeof item === 'string' ? item : item.body?.static || item.static || String(item))
+  return items.map(item => {
+    // Extract the actual string value from the i18n AST object
+    let text = ''
+    if (typeof item === 'string') {
+      text = item
+    } else if (item && typeof item === 'object' && item.loc && item.loc.source) {
+      // i18n AST object - get the source text
+      text = item.loc.source
+    } else if (item && typeof item === 'object') {
+      // Fallback to other properties
+      text = item.body?.static || item.static || item.value || String(item)
+    } else {
+      text = String(item)
+    }
+    
+    return text
+  })
 })
 
 const founderStory = computed(() => {
   const items = tm('about.founderStory')
   if (!Array.isArray(items)) return []
-  return items.map(item => typeof item === 'string' ? item : item.body?.static || item.static || String(item))
+  return items.map(item => {
+    if (typeof item === 'string') {
+      return item
+    } else if (item && typeof item === 'object' && item.loc && item.loc.source) {
+      return item.loc.source
+    } else {
+      return item?.body?.static || item?.static || String(item)
+    }
+  })
 })
 
 const comfortTypes = computed(() => {
@@ -19,9 +43,15 @@ const comfortTypes = computed(() => {
   if (!Array.isArray(items)) return []
   return items.map(item => {
     if (typeof item === 'object' && item !== null) {
+      const getTextFromItem = (subItem: any) => {
+        if (typeof subItem === 'string') return subItem
+        if (subItem?.loc?.source) return subItem.loc.source
+        return subItem?.body?.static || subItem?.static || String(subItem)
+      }
+      
       return {
-        title: typeof item.title === 'string' ? item.title : item.title?.body?.static || item.title?.static || String(item.title),
-        description: typeof item.description === 'string' ? item.description : item.description?.body?.static || item.description?.static || String(item.description)
+        title: getTextFromItem(item.title),
+        description: getTextFromItem(item.description)
       }
     }
     return item
@@ -37,13 +67,17 @@ const stats = computed(() => [
 
 // Helper functions to extract year and text from pipe-separated strings
 function getQualificationYear(qualification: string): string {
-  const parts = qualification.split('|')
+  // Handle both object and string cases
+  const text = typeof qualification === 'string' ? qualification : String(qualification)
+  const parts = text.split('|')
   return parts[0] || ''
 }
 
 function getQualificationText(qualification: string): string {
-  const parts = qualification.split('|')
-  return parts[1] || ''
+  // Handle both object and string cases
+  const text = typeof qualification === 'string' ? qualification : String(qualification)
+  const parts = text.split('|')
+  return parts[1] || qualification // fallback to original if no pipe found
 }
 </script>
 
