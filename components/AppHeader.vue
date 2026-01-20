@@ -56,9 +56,12 @@ const currentLanguage = computed(() => {
           </div>
 
           <!-- CTA Button -->
-          <button class="hidden sm:block bg-primary-700 hover:bg-primary-800 px-4 py-2 text-sm font-heading font-semibold tracking-wide transition-colors">
+          <NuxtLink
+            :to="localePath('/contact')"
+            class="hidden sm:block bg-primary-700 hover:bg-primary-800 px-4 py-2 text-sm font-heading font-semibold tracking-wide transition-colors"
+          >
             {{ t('nav.quote') }}
-          </button>
+          </NuxtLink>
         </div>
       </div>
     </div>
