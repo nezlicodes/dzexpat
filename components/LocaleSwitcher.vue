@@ -14,10 +14,10 @@ function onChange(code: string) {
 </script>
 
 <template>
-  <label class="flex items-center gap-2 text-sm text-gray-600">
+  <label class="flex items-center gap-2 text-sm text-white">
     <span class="sr-only">Language</span>
     <select
-      class="rounded-md border border-gray-300 bg-white px-2 py-1 text-sm hover:bg-gray-50"
+      class="rounded-md border border-white/30 bg-transparent px-2 py-1 text-sm text-white hover:bg-white/10 focus:bg-white/10 focus:outline-none"
       :value="locale"
       @change="onChange(($event.target as HTMLSelectElement).value)"
     >
