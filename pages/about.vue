@@ -1,62 +1,11 @@
 <script setup lang="ts">
-const { t, tm } = useI18n()
+const { t } = useI18n()
+const { getTranslationArray, getTranslationObjectArray } = useTranslationArrays()
 
-// Extract arrays from translations with proper validation
-const qualifications = computed(() => {
-  const items = tm('about.qualifications.items')
-  if (!Array.isArray(items)) return []
-  return items.map(item => {
-    // Extract the actual string value from the i18n AST object
-    let text = ''
-    if (typeof item === 'string') {
-      text = item
-    } else if (item && typeof item === 'object' && item.loc && item.loc.source) {
-      // i18n AST object - get the source text
-      text = item.loc.source
-    } else if (item && typeof item === 'object') {
-      // Fallback to other properties
-      text = item.body?.static || item.static || item.value || String(item)
-    } else {
-      text = String(item)
-    }
-    
-    return text
-  })
-})
-
-const founderStory = computed(() => {
-  const items = tm('about.founderStory')
-  if (!Array.isArray(items)) return []
-  return items.map(item => {
-    if (typeof item === 'string') {
-      return item
-    } else if (item && typeof item === 'object' && item.loc && item.loc.source) {
-      return item.loc.source
-    } else {
-      return item?.body?.static || item?.static || String(item)
-    }
-  })
-})
-
-const comfortTypes = computed(() => {
-  const items = tm('about.comfortTypes')
-  if (!Array.isArray(items)) return []
-  return items.map(item => {
-    if (typeof item === 'object' && item !== null) {
-      const getTextFromItem = (subItem: any) => {
-        if (typeof subItem === 'string') return subItem
-        if (subItem?.loc?.source) return subItem.loc.source
-        return subItem?.body?.static || subItem?.static || String(subItem)
-      }
-      
-      return {
-        title: getTextFromItem(item.title),
-        description: getTextFromItem(item.description)
-      }
-    }
-    return item
-  })
-})
+// Extract arrays from translations using the composable
+const qualifications = computed(() => getTranslationArray('about.qualifications.items'))
+const founderStory = computed(() => getTranslationArray('about.founderStory'))
+const comfortTypes = computed(() => getTranslationObjectArray('about.comfortTypes'))
 
 const stats = computed(() => [
   { number: '1+', label: t('about.stats.clients') },
