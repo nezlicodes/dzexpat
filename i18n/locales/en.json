@@ -374,6 +374,62 @@
       "phone": "+213 (0) 799 936 950"
     }
   },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "Get in Touch",
+      "description": "Ready to start your expatriation journey in Algeria? Our team of experts is here to guide you through every step of the process."
+    },
+    "info": {
+      "title": "How can we help you?",
+      "description": "Whether you're planning your first expatriation or need assistance with ongoing services, we're here to provide personalized solutions for your business needs.",
+      "services": [
+        "Complete expatriation planning and logistics",
+        "Administrative assistance and legal compliance",
+        "Housing and family integration services", 
+        "Ongoing support and consultation"
+      ]
+    },
+    "form": {
+      "title": "Send us a message",
+      "description": "Fill out the form below and we'll get back to you within 24 hours.",
+      "name": "Full Name",
+      "email": "Email Address",
+      "company": "Company Name",
+      "phone": "Phone Number",
+      "service": "Service Needed",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "services": {
+        "logistics": "Logistics & Planning",
+        "administrative": "Administrative Services",
+        "family": "Family Services", 
+        "intercultural": "Intercultural Training",
+        "consultation": "General Consultation"
+      }
+    },
+    "details": {
+      "title": "Contact Information",
+      "address": {
+        "title": "Office Address",
+        "line1": "World Trade Center",
+        "line2": "13 rue Mohamed Semani 16035 Hydra, Alger"
+      },
+      "phone": {
+        "title": "Phone",
+        "number": "+213 (0) 799 936 950"
+      },
+      "email": {
+        "title": "Email", 
+        "address": "contact{'@'}dzexpat.com"
+      },
+      "hours": {
+        "title": "Business Hours",
+        "weekdays": "Monday - Friday: 8:00 AM - 6:00 PM",
+        "weekend": "Saturday: 9:00 AM - 2:00 PM"
+      }
+    }
+  },
   "footer": {
     "description": "DZ EXPAT is a consulting firm for companies that assists Human Resources Departments in professional geomobility management.",
     "quickLinks": "Quick links",

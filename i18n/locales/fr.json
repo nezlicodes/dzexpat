@@ -374,6 +374,62 @@
       "phone": "+213 (0) 799 936 950"
     }
   },
+  "contact": {
+    "hero": {
+      "title": "Nous Contacter",
+      "subtitle": "Prenez Contact",
+      "description": "Prêt à commencer votre parcours d'expatriation en Algérie ? Notre équipe d'experts est là pour vous guider à travers chaque étape du processus."
+    },
+    "info": {
+      "title": "Comment pouvons-nous vous aider ?",
+      "description": "Que vous planifiez votre première expatriation ou ayez besoin d'assistance pour des services en cours, nous sommes là pour fournir des solutions personnalisées pour vos besoins professionnels.",
+      "services": [
+        "Planification et logistique complètes d'expatriation",
+        "Assistance administrative et conformité légale",
+        "Services de logement et d'intégration familiale",
+        "Support continu et consultation"
+      ]
+    },
+    "form": {
+      "title": "Envoyez-nous un message",
+      "description": "Remplissez le formulaire ci-dessous et nous vous répondrons dans les 24 heures.",
+      "name": "Nom Complet",
+      "email": "Adresse Email",
+      "company": "Nom de l'Entreprise",
+      "phone": "Numéro de Téléphone",
+      "service": "Service Requis",
+      "message": "Votre Message",
+      "submit": "Envoyer le Message",
+      "services": {
+        "logistics": "Logistique et Planification",
+        "administrative": "Services Administratifs",
+        "family": "Services Familiaux",
+        "intercultural": "Formation Interculturelle",
+        "consultation": "Consultation Générale"
+      }
+    },
+    "details": {
+      "title": "Informations de Contact",
+      "address": {
+        "title": "Adresse du Bureau",
+        "line1": "World Trade Center",
+        "line2": "13 rue Mohamed Semani 16035 Hydra, Alger"
+      },
+      "phone": {
+        "title": "Téléphone",
+        "number": "+213 (0) 799 936 950"
+      },
+      "email": {
+        "title": "Email",
+        "address": "contact{'@'}dzexpat.com"
+      },
+      "hours": {
+        "title": "Heures d'Ouverture",
+        "weekdays": "Lundi - Vendredi : 8h00 - 18h00",
+        "weekend": "Samedi : 9h00 - 14h00"
+      }
+    }
+  },
   "footer": {
     "description": "DZ EXPAT est un cabinet de Conseil aux entreprises qui assiste les Directions des Ressources Humaines dans la gestion de la géomobilité professionnelle.",
     "quickLinks": "Liens rapides",
