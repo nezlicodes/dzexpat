@@ -1,66 +1,25 @@
 <script setup lang="ts">
-const { t, tm } = useI18n()
+const { t } = useI18n()
+const { getTranslationArray, getTranslationObjectArray } = useTranslationArrays()
 
 const localePath = useLocalePath()
 
-// Access arrays from translations using tm() and convert to strings
-const needsItems = computed(() => {
-  const items = tm('needs.items') as any[]
-  return items.map(item => typeof item === 'string' ? item : item.body?.static || item.static || String(item))
-})
-
-const dzDreamStats = computed(() => {
-  const items = tm('dzDream.stats') as any[]
-  return items.map(item => typeof item === 'string' ? item : item.body?.static || item.static || String(item))
-})
+// Access arrays from translations using the composable
+const needsItems = computed(() => getTranslationArray('needs.items'))
+const dzDreamStats = computed(() => getTranslationArray('dzDream.stats'))
 
 // Solutions arrays
-const logisticsItems = computed(() => {
-  const items = tm('solutions.logistics.items') as any[]
-  return items.map(item => typeof item === 'string' ? item : item.body?.static || item.static || String(item))
-})
-
-const administrativeItems = computed(() => {
-  const items = tm('solutions.administrative.items') as any[]
-  return items.map(item => typeof item === 'string' ? item : item.body?.static || item.static || String(item))
-})
-
-const familyItems = computed(() => {
-  const items = tm('solutions.family.items') as any[]
-  return items.map(item => typeof item === 'string' ? item : item.body?.static || item.static || String(item))
-})
-
-const interculturalItems = computed(() => {
-  const items = tm('solutions.intercultural.items') as any[]
-  return items.map(item => typeof item === 'string' ? item : item.body?.static || item.static || String(item))
-})
+const logisticsItems = computed(() => getTranslationArray('solutions.logistics.items'))
+const administrativeItems = computed(() => getTranslationArray('solutions.administrative.items'))
+const familyItems = computed(() => getTranslationArray('solutions.family.items'))
+const interculturalItems = computed(() => getTranslationArray('solutions.intercultural.items'))
 
 // Comfort arrays
-const organizationItems = computed(() => {
-  const items = tm('confort.organization.items') as any[]
-  return items.map(item => typeof item === 'string' ? item : item.body?.static || item.static || String(item))
-})
-
-const lifeItems = computed(() => {
-  const items = tm('confort.life.items') as any[]
-  return items.map(item => typeof item === 'string' ? item : item.body?.static || item.static || String(item))
-})
+const organizationItems = computed(() => getTranslationArray('confort.organization.items'))
+const lifeItems = computed(() => getTranslationArray('confort.life.items'))
 
 // Testimonials
-const testimonialCompanies = computed(() => {
-  const companies = tm('testimonials.companies') as any[]
-  return companies.map(company => {
-    if (typeof company === 'object' && company !== null) {
-      return {
-        name: typeof company.name === 'string' ? company.name : company.name?.body?.static || company.name?.static || String(company.name),
-        quote: typeof company.quote === 'string' ? company.quote : company.quote?.body?.static || company.quote?.static || String(company.quote),
-        author: typeof company.author === 'string' ? company.author : company.author?.body?.static || company.author?.static || String(company.author),
-        position: typeof company.position === 'string' ? company.position : company.position?.body?.static || company.position?.static || String(company.position)
-      }
-    }
-    return company
-  })
-})
+const testimonialCompanies = computed(() => getTranslationObjectArray('testimonials.companies'))
 
 // Stats for testimonials section
 const stats = computed(() => [
