@@ -1,86 +1,14 @@
 <script setup lang="ts">
-const { t, tm } = useI18n()
+const { t } = useI18n()
+const { getTranslationArray, getTranslationObjectArray } = useTranslationArrays()
 
-// Extract arrays from translations with proper validation
-const logisticsItems = computed(() => {
-  const items = tm('solutions.logistics.items')
-  if (!Array.isArray(items)) return []
-  return items.map(item => {
-    const text = typeof item === 'string' ? item : item.loc?.source || item.body?.static || item.static || String(item)
-    return text
-  })
-})
-
-const administrativeItems = computed(() => {
-  const items = tm('solutions.administrative.items')
-  if (!Array.isArray(items)) return []
-  return items.map(item => {
-    const text = typeof item === 'string' ? item : item.loc?.source || item.body?.static || item.static || String(item)
-    return text
-  })
-})
-
-const familyItems = computed(() => {
-  const items = tm('solutions.family.items')
-  if (!Array.isArray(items)) return []
-  return items.map(item => {
-    const text = typeof item === 'string' ? item : item.loc?.source || item.body?.static || item.static || String(item)
-    return text
-  })
-})
-
-const interculturalItems = computed(() => {
-  const items = tm('solutions.intercultural.items')
-  if (!Array.isArray(items)) return []
-  return items.map(item => {
-    const text = typeof item === 'string' ? item : item.loc?.source || item.body?.static || item.static || String(item)
-    return text
-  })
-})
-
-const comfortTypes = computed(() => {
-  const items = tm('solutions.comfortTypes')
-  if (!Array.isArray(items)) return []
-  return items.map(item => {
-    if (typeof item === 'object' && item !== null) {
-      const getTextFromItem = (subItem: any) => {
-        if (typeof subItem === 'string') return subItem
-        if (subItem?.loc?.source) return subItem.loc.source
-        return subItem?.body?.static || subItem?.static || String(subItem)
-      }
-      
-      return {
-        title: getTextFromItem(item.title),
-        subtitle: getTextFromItem(item.subtitle),
-        items: Array.isArray(item.items) ? item.items.map(getTextFromItem) : []
-      }
-    }
-    return item
-  })
-})
-
-const testimonialCompanies = computed(() => {
-  const items = tm('solutions.testimonials')
-  if (!Array.isArray(items)) return []
-  return items.map(item => {
-    if (typeof item === 'object' && item !== null) {
-      const getTextFromItem = (subItem: any) => {
-        if (typeof subItem === 'string') return subItem
-        if (subItem?.loc?.source) return subItem.loc.source
-        return subItem?.body?.static || subItem?.static || String(subItem)
-      }
-      
-      return {
-        name: getTextFromItem(item.name),
-        quote: getTextFromItem(item.quote),
-        author: getTextFromItem(item.author),
-        position: getTextFromItem(item.position),
-        logo: item.logo || 'placeholder'
-      }
-    }
-    return item
-  })
-})
+// Extract arrays from translations using the composable
+const logisticsItems = computed(() => getTranslationArray('solutions.logistics.items'))
+const administrativeItems = computed(() => getTranslationArray('solutions.administrative.items'))
+const familyItems = computed(() => getTranslationArray('solutions.family.items'))
+const interculturalItems = computed(() => getTranslationArray('solutions.intercultural.items'))
+const comfortTypes = computed(() => getTranslationObjectArray('solutions.comfortTypes'))
+const testimonialCompanies = computed(() => getTranslationObjectArray('solutions.testimonials'))
 </script>
 
 <template>
