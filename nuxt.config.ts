@@ -17,10 +17,16 @@ export default defineNuxtConfig({
   i18n: {
     strategy: 'prefix_except_default',
     defaultLocale: 'en',
-    langDir: 'locales',
+    langDir: 'i18n/locales',
     lazy: true,
+    compilation: {
+      strictMessage: false
+    },
     bundle: {
-      optimizeTranslationDirective: false
+      compositionOnly: false,
+      runtimeOnly: false,
+      fullInstall: true,
+      dropMessageCompiler: false
     },
     locales: [
       { code: 'en', iso: 'en-US', name: 'English', file: 'en.json', dir: 'ltr' },

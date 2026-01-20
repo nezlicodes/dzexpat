@@ -3,8 +3,35 @@ const { t, tm } = useI18n()
 
 // Extract services array from translations
 const services = computed(() => {
-  const items = tm('contact.info.services') as any[]
-  return items.map(item => typeof item === 'string' ? item : item.body?.static || item.static || String(item))
+  try {
+    const items = tm('contact.info.services') as any[]
+    if (Array.isArray(items)) {
+      return items.map((item, index) => {
+        // Handle different possible formats
+        if (typeof item === 'string') {
+          return item
+        }
+        // Try to get the actual translation value using the index
+        return t(`contact.info.services.${index}`)
+      })
+    }
+    // Fallback: directly access array items by index
+    return [
+      t('contact.info.services.0'),
+      t('contact.info.services.1'),
+      t('contact.info.services.2'),
+      t('contact.info.services.3')
+    ]
+  } catch (error) {
+    console.error('Error loading services:', error)
+    // Ultimate fallback
+    return [
+      'Complete expatriation planning and logistics',
+      'Administrative assistance and legal compliance',
+      'Housing and family integration services',
+      'Ongoing support and consultation'
+    ]
+  }
 })
 
 // Form data
